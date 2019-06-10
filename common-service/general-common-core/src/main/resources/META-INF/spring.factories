@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.znzd.charging.common.core.config.JacksonConfig,\
+  com.znzd.charging.common.core.config.MessageSourceConfig,\
+  com.znzd.charging.common.core.config.RestTemplateConfig,\
+  com.znzd.charging.common.core.util.SpringContextHolder

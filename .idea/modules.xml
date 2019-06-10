@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-service/common-service.iml" filepath="$PROJECT_DIR$/common-service/common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/general-auth/general-auth.iml" filepath="$PROJECT_DIR$/general-auth/general-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-service/general-common-core/general-common-core.iml" filepath="$PROJECT_DIR$/common-service/general-common-core/general-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-service/general-common-gateway/general-common-gateway.iml" filepath="$PROJECT_DIR$/common-service/general-common-gateway/general-common-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-service/general-common-security/general-common-security.iml" filepath="$PROJECT_DIR$/common-service/general-common-security/general-common-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-service/general-common-swagger/general-common-swagger.iml" filepath="$PROJECT_DIR$/common-service/general-common-swagger/general-common-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/general-service.iml" filepath="$PROJECT_DIR$/general-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-service/general-upms-api/general-upms-api.iml" filepath="$PROJECT_DIR$/common-service/general-upms-api/general-upms-api.iml" />
+    </modules>
+  </component>
+</project>

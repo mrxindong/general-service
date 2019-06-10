@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: @artifactId@
+  # 配置中心
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: charging-config
+
+# 注册中心配置
+eureka:
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://charging:charging@charging-eureka:8761/eureka/
+#      defaultZone: http://charging:charging@192.168.1.222:8761/eureka/

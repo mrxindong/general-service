@@ -1,0 +1,35 @@
+server:
+  port: 8761
+
+spring:
+  security:
+    user:
+      name: charging
+      password: charging
+  application:
+    name: eureka-service
+  cloud:
+    config:
+      enabled: false
+# docker-compose部署时候 hostname 换成charging-eureka
+# 类似的 redis 使用charging-redis ,gateway 换成 charging-gateway
+eureka:
+  instance:
+    hostname: eureka-service
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://charging:charging@${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    eviction-interval-timer-in-ms: 4000
+    enable-self-preservation: false
+    renewal-percent-threshold: 0.9
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

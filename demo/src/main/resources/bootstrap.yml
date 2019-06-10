@@ -1,0 +1,16 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: @artifactId@
+
+
+# 注册中心配置
+eureka:
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://charging:charging@charging-eureka:8761/eureka/

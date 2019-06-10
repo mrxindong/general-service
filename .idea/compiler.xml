@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="charging-auth" />
+        <module name="charging-common-core" />
+        <module name="charging-common-gateway" />
+        <module name="charging-common-security" />
+        <module name="charging-common-swagger" />
+        <module name="charging-gateway" />
+        <module name="charging-upms-api" />
+        <module name="common-service" />
+        <module name="config-service" />
+        <module name="demo" />
+        <module name="eureka-service" />
+        <module name="general-auth" />
+        <module name="general-common-core" />
+        <module name="general-common-gateway" />
+        <module name="general-common-security" />
+        <module name="general-common-swagger" />
+        <module name="general-service" />
+        <module name="general-upms-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="charging-auth" target="1.8" />
+      <module name="charging-common-core" target="1.8" />
+      <module name="charging-common-gateway" target="1.8" />
+      <module name="charging-common-log" target="1.8" />
+      <module name="charging-common-security" target="1.5" />
+      <module name="charging-common-swagger" target="1.5" />
+      <module name="charging-gateway" target="1.8" />
+      <module name="charging-upms-api" target="1.8" />
+      <module name="common-service" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="general-auth" target="1.8" />
+      <module name="general-common-core" target="1.8" />
+      <module name="general-common-gateway" target="1.8" />
+      <module name="general-common-security" target="1.8" />
+      <module name="general-common-swagger" target="1.8" />
+      <module name="general-gateway" target="1.8" />
+      <module name="general-service" target="1.8" />
+      <module name="general-upms-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

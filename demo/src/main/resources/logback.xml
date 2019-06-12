@@ -115,16 +115,18 @@
 		<appender-ref ref ="INFO"/>
 	</appender>
 
-	<!-- 打印sql -->
-	<!--<logger name="com.znzd.charging.adv.mapper" level="DEBUG"/>-->
-	<!-- root级别   INFO -->
-	<root level="INFO">
-        <appender-ref ref="LOGSTASH" />
-		<!-- 控制台输出 -->
-		<appender-ref ref="STDOUT"/>
-		<!-- 文件输出 -->
-		<appender-ref ref="ERROR"/>
-		<appender-ref ref="ASYNC"/>
-		<!-- <appender-ref ref ="ASYNC"/>   -->
-	</root>
+    <springProfile name="dev">
+        <!-- 打印sql -->
+        <!--<logger name="com.znzd.charging.adv.mapper" level="DEBUG"/>-->
+        <!-- root级别   INFO -->
+        <root level="INFO">
+            <appender-ref ref="LOGSTASH" />
+            <!-- 控制台输出 -->
+            <appender-ref ref="STDOUT"/>
+            <!-- 文件输出 -->
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="ASYNC"/>
+            <!-- <appender-ref ref ="ASYNC"/>   -->
+        </root>
+    </springProfile>
 </configuration>

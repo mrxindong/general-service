@@ -115,7 +115,6 @@
     </appender>
 
     <springProfile name="dev">
-
         <!-- 打印sql -->
         <!--<logger name="com.znzd.charging.adv.mapper" level="DEBUG"/>-->
         <!-- root级别   INFO -->

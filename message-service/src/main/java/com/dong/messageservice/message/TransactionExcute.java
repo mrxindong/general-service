@@ -8,12 +8,8 @@ public abstract class TransactionExcute {
     private TransactionLocal transactionLocal;
 
 
+    public void excuteTransation(){
 
-    public TransactionLocal getTransactionLocal() {
-        return transactionLocal;
     }
 
-    public void setTransactionLocal(TransactionLocal transactionLocal) {
-        this.transactionLocal = transactionLocal;
-    }
 }

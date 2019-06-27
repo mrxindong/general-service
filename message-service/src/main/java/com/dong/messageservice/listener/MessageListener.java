@@ -24,7 +24,6 @@ public class MessageListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-
         while (true) {
             List<TransactionProducer> transactionProducerList = transactionService.getTimeoutMsg();
             if (null != transactionProducerList && transactionProducerList.size() > 0) {
